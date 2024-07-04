@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Hired</title>
+    <link rel="stylesheet" href="/Estilos/getHiredStyles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#"><img src="logo.png" alt="HireLATAM Logo"></a>
+            <ul>
+                <li><a href="#" class="header-buttons hired">Get hired</a></li>
+                <li><a href="#" class="header-buttons hire">Hire us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="header-section">
+        <div class="header-content">
+            <h1 class="title">
+                Career Opportunities
+                <span class="underline"></span>
+            </h1>
+            <div class="circles">
+                <div class="circle blue-circle"></div>
+                <div class="circle white-circle"></div>
+                <div class="circle blue-circle"></div>
+            </div>
+        </div>
+    </section>
+    <section class="content-section">
+        <div class="content-left">
+            <p>At HireLATAM, we’re dedicated to facilitating connections between US companies and the exceptional talent found in Latin America. Our mission is to empower professionals across the region by providing them with exciting career opportunities in the United States.</p>
+        </div>
+        <div class="content-right">
+            <img src="/Paginas/img/comparison.jpeg" alt="Person pointing" class="person-image">
+        </div>
+    </section>
+    <div class="container">
+        <p class="browser-recommendation">
+            For the best experience while applying, we recommend using an updated version of Google Chrome browser. Some features of the application process may not function optimally on other browsers.
+        </p>
+
+        <div class="search-bar">
+            <label for="locations">Locations</label>
+            <select id="locations">
+                <option value="">Select a location</option>
+            </select>
+
+            <label for="departments">Departments</label>
+            <select id="departments">
+                <option value="">Select a department</option>
+            </select>
+
+            <input type="text" id="search" placeholder="Search jobs...">
+        </div>
+
+        <div class="job-listings">
+            <h2>Accounting / Finance</h2>
+        
+            <div class="job-item">
+                <h3>REMOTE PROPERTY MANAGEMENT ACCOUNTANT</h3>
+                <div class="job-details">
+                    <p class="locations">Mexico, Colombia, Argentina, Venezuela, Honduras, Brazil, Nicaragua, Guatemala, Costa Rica, Chile, Dominican Republic, Ecuador, El Salvador, Panama, Uruguay, Peru, Latin America, Belize</p>
+                    <button class="apply-button">Apply</button>
+                </div>
+                <p class="tags">Full time | Remote</p>
+            </div>
+        
+            <div class="job-item">
+                <h3>REMOTE CHIEF FINANCIAL OFFICER</h3>
+                <div class="job-details">
+                    <p class="locations">Mexico, Colombia, Argentina, Venezuela, Honduras, Brazil, Nicaragua, Guatemala, Costa Rica, Chile, Dominican Republic, Ecuador, El Salvador, Panama, Uruguay, Peru, Latin America, Belize</p>
+                    <button class="apply-button">Apply</button>
+                </div>
+                <p class="tags">Full time | Remote</p>
+            </div>
+            <h2>Engineering</h2>
+
+            <div class="job-item">
+                <h3>REMOTE PROPERTY MANAGEMENT ACCOUNTANT</h3>
+                <div class="job-details">
+                    <p class="locations">Mexico, Colombia, Argentina, Venezuela, Honduras, Brazil, Nicaragua, Guatemala, Costa Rica, Chile, Dominican Republic, Ecuador, El Salvador, Panama, Uruguay, Peru, Latin America, Belize</p>
+                    <button class="apply-button">Apply</button>
+                </div>
+                <p class="tags">Full time | Remote</p>
+            </div>
+        
+            <div class="job-item">
+                <h3>REMOTE CHIEF FINANCIAL OFFICER</h3>
+                <div class="job-details">
+                    <p class="locations">Mexico, Colombia, Argentina, Venezuela, Honduras, Brazil, Nicaragua, Guatemala, Costa Rica, Chile, Dominican Republic, Ecuador, El Salvador, Panama, Uruguay, Peru, Latin America, Belize</p>
+                    <button class="apply-button">Apply</button>
+                </div>
+                <p class="tags">Full time | Remote</p>
+            </div>
+            <h2>Marketing</h2>
+
+            <div class="job-item">
+                <h3>REMOTE PROPERTY MANAGEMENT ACCOUNTANT</h3>
+                <div class="job-details">
+                    <p class="locations">Mexico, Colombia, Argentina, Venezuela, Honduras, Brazil, Nicaragua, Guatemala, Costa Rica, Chile, Dominican Republic, Ecuador, El Salvador, Panama, Uruguay, Peru, Latin America, Belize</p>
+                    <button class="apply-button">Apply</button>
+                </div>
+                <p class="tags">Full time | Remote</p>
+            </div>
+        
+            <div class="job-item">
+                <h3>REMOTE CHIEF FINANCIAL OFFICER</h3>
+                <div class="job-details">
+                    <p class="locations">Mexico, Colombia, Argentina, Venezuela, Honduras, Brazil, Nicaragua, Guatemala, Costa Rica, Chile, Dominican Republic, Ecuador, El Salvador, Panama, Uruguay, Peru, Latin America, Belize</p>
+                    <button class="apply-button">Apply</button>
+                </div>
+                <p class="tags">Full time | Remote</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="content">
+            <div class="left">
+                <h2>HireLATAM</h2>
+                <p>Connecting US businesses with exceptional remote talent in Latin America</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i> </a>
+                    <a href="#"><i class="fab fa-twitter"></i> </a>
+                    <a href="#"><i class="fab fa-youtube"></i> </a>
+                    <a href="#"><i class="fab fa-instagram"></i> </a>
+                    <a href="#"><i class="fab fa-tiktok"></i> </a>
+                </div>
+                <a href="#">Privacy Policy</a>
+            </div>
+            <div class="right">
+                <h3>Company</h3>
+                <a href="#">Our team</a><br>
+                <a href="#">Contact us</a><br>
+                <a href="#">Hire Virtual Assistants in Latin America</a><br>
+                <a href="#">Hire Marketing Professionals in Latin America</a><br>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+        <div class="copyright">
+            All Rights Reserved 2024
+        </div>
+    </footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const locations = ["New York", "San Francisco", "Los Angeles", "Chicago"];
+    const departments = ["Engineering", "Marketing", "Sales", "Customer Support"];
+
+    const locationsSelect = document.getElementById('locations');
+    const departmentsSelect = document.getElementById('departments');
+
+    locations.forEach(location => {
+        const option = document.createElement('option');
+        option.value = location;
+        option.textContent = location;
+        locationsSelect.appendChild(option);
+    });
+
+    departments.forEach(department => {
+        const option = document.createElement('option');
+        option.value = department;
+        option.textContent = department;
+        departmentsSelect.appendChild(option);
+    });
+});
+</script>
+</body>
+</html>

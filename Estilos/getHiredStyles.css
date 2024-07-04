@@ -1,0 +1,311 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*******************HEADER***************************/
+header {
+    background-color: #fff;
+    padding: 0px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    font-weight: bold;
+}
+.header-buttons{
+    text-align: center;
+    display: flex;
+    padding: 10px 20px;
+    width: 90px;
+    text-wrap: wrap;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.hired
+{
+    background-color: #ae6ffa;
+}
+.hire
+{
+    background-color: #00a5ff;
+    margin-right: 80px;
+}
+/*****************END HEADER*********************/
+
+/***************CAREER OPORTUNITIES**************/
+
+.header-section {
+    background-color: #6d28d9;
+    color: white;
+    text-align: left;
+    padding: 40px 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.title {
+    font-size: 3em;
+    margin: auto;
+    position: relative;
+    display: inline-block;
+    padding-right: 40px;
+    padding-left: 60px;
+}
+
+.underline {
+    display: block;
+    height: 5px;
+    width: 0;
+    background-color: white;
+    position: absolute;
+    bottom: -10px;
+    animation: underlineAnimation 1s ease-out forwards;
+}
+
+@keyframes underlineAnimation {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 85%;
+    }
+}
+
+.circles {
+    display: flex;
+    align-items: center;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.blue-circle {
+    background-color: #3b82f6;
+}
+
+.white-circle {
+    background-color: white;
+    width: 60px; /* Slightly larger white circle */
+    height: 60px;
+}
+
+
+.content-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.content-left {
+    width: 580px;
+    padding: 60px;
+}
+
+.content-left p {
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #000;
+}
+
+.content-right {
+    flex: 1;
+    margin: auto;
+    margin-left: 60px;
+}
+
+.person-image {
+    max-width: 400px;
+    height: auto;
+    margin-top: 20px;
+    margin: auto;
+}
+/*****************END CAREER OPORTUNITIES*****************/
+
+/**************************JOBS***************************/
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.browser-recommendation {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 50px;
+    font-size: 1em;
+    text-align: center;
+    font-weight: 600;
+    color: #00a5ff;
+    max-width: 100%;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.search-bar select, 
+.search-bar input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1em;
+}
+.search-bar input{
+    width: 700px;
+}
+
+.search-bar select:focus, 
+.search-bar input:focus {
+    border-color: #6d28d9;
+}
+
+.job-listings h2 {
+    margin-bottom: 10px;
+}
+
+.job-item {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.job-item h3 {
+    margin: 0 0 5px 0;
+}
+
+.job-item .job-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.job-item .locations {
+    font-size: 0.9em;
+    color: #555;
+    flex: 1;
+    margin-right: 20px;
+}
+
+.apply-button {
+    background-color: #007bff; /* Azul */
+    color: white;
+    padding: 14px 40px;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+}
+
+.apply-button:hover {
+    background-color: #0056b3; /* Azul más oscuro */
+}
+
+.tags {
+    font-size: 0.9em;
+    color: #555;
+}
+/*******************END JOBS********************/
+
+/************************FOOTER****************************/
+.footer {
+    background-color: #3a2f52;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer .content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+.footer .left h2 {
+    font-size: 2em;
+}
+.footer .right h3 {
+    margin: 20px 10px;
+}
+.footer .left p {
+    font-size: 1em;
+    max-width: 250px;
+    font-weight: 500;
+}
+.footer .left, .footer .right {
+    flex: 1;
+    margin: 10px 20px;
+}
+.footer .left {
+    text-align: left;
+}
+.footer .right {
+    text-align: right;
+    margin: 10px 100px 10px auto;
+}
+.footer .social-icons {
+    margin: 30px 0;
+}
+.footer .social-icons a {
+    margin: 0 15px;
+    color: #ffffff;
+    text-decoration: none;
+}
+.footer .social-icons a:hover {
+    color: #ccc;
+}
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+.footer .copyright {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #cccccc;
+}
+/*********************END FOOTER**********************/

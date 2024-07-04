@@ -46,11 +46,11 @@ nav ul li a {
 }
 .hired
 {
-    background-color: purple;
+    background-color: #ae6ffa;
 }
 .hire
 {
-    background-color: #007bff;
+    background-color: #00a5ff;
     margin-right: 80px;
 }
 /*****************END HEADER*********************/
@@ -81,7 +81,7 @@ nav ul li a {
     font-size: 1.2em;
     align-content: center;
     margin-bottom: 20px;
-    background-color: #007bff;
+    background-color: #00a5ff;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -107,7 +107,7 @@ nav ul li a {
 .how-it-works {
     text-align: center;
     padding: 50px;
-    background-color:   #f8f8f8;
+    background-color:   #f7f7f7;
 }
 .how-it-works h2 {
     font-size: 3em;
@@ -139,7 +139,7 @@ nav ul li a {
 
 .step h3 {
     font-size: 2em;
-    background-color: #007bff;
+    background-color: #00a5ff;
     margin: 10px 0;
     width: 50px;
     height: 50px;
@@ -194,7 +194,7 @@ nav ul li a {
 .successful-placements {
     text-align: center;
     padding: 50px;
-    background-color: #f8f8f8;
+    background-color: #f7f7f7;
 }
 
 .successful-placements h2 {
@@ -284,7 +284,7 @@ nav ul li a {
 .hero2 h2 {
     font-size: 1.5em;
     margin-bottom: 20px;
-    color: blue;
+    color: #00a5ff;
 }
 
 .hero2 button {
@@ -292,7 +292,7 @@ nav ul li a {
     font-size: 1.2em;
     align-content: center;
     margin-bottom: 20px;
-    background-color: #007bff;
+    background-color: #00a5ff;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -300,7 +300,7 @@ nav ul li a {
 }
 
 .hero2 button:hover {
-    background-color: #0056b3;
+    background-color: #00a5ff;
 }
 .hero2 p {
     font-size: 1.2em;
@@ -314,35 +314,195 @@ nav ul li a {
 }
 /******************END HERO2 SECTION***********************/
 
+/******************SLIDER***********************/
+.sliderr{
+    text-align: center;
+    font-size: 3em;
+}
+.slider {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    position: relative; 
+    
+}
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.slide {
+    
+    box-sizing: border-box;
+    width: 600px;
+    height: 400px;
+}
+.arrows {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.arrow {
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    outline: none;
+}
+
+.arrow:hover {
+    color: #333;
+}
+.twitter-tweet {
+    display: none;
+}
+
+/******************END SLIDER***********************/
+
 /*****************FAQ QUESTIONS****************************/
 .faq-section {
-    max-width: 800px;
     margin: auto;
+    background-color: #f8f8f8;
     padding: 20px;
 }
 
 .faq-title {
-    font-size: 2em;
+    font-size: 3em;
     text-align: center;
+    color: #000;
+    font-weight: 700;
     margin-bottom: 20px;
 }
 
 .faq-item {
     margin-bottom: 10px;
+    
 }
 
 .faq-question {
-    background-color: #f1f1f1;
+    background-color: #f8f8f8;
     padding: 10px;
+    color: #00a5ff;
     cursor: pointer;
-    border: 1px solid #ccc;
-}
+    font-weight: 600;
+    font-size: 1em;
+    border-bottom: 1px solid #ccc;
+    margin:0 30px 0 30px;
+    transform: translateY(-10px); /* Desplaza ligeramente hacia arriba */
+    transition: max-height 0.3s ease-out, transform 0.3s ease-out, opacity 0.3s ease-out; 
 
+}
+.faq-question.active {
+    color: #ae6ffa;
+    transform: translateY(0); /* Vuelve a la posición original */
+    opacity: 1; /* Visible */
+}
 .faq-answer {
     display: none;
     padding: 10px;
+    max-width: 1150px;
+    margin: auto;
+    font-size: 1em;
     border: 1px solid #ccc;
-    border-top: none;
+    border: none;
+    margin-left: 0 30px 0 30px;
+    background-color: #f8f8f8;
+
 }
 
 /**********************END FAQ QUESTIONS***********************/
+
+
+/**********************READY TO ELEVATE************************/
+.ready-to-elevate{
+    text-align: center;
+    padding: 50px;
+}
+.ready-to-elevate .container h2{
+    font-size: 2.2em;
+    max-width: 600px;
+    margin: auto;
+    font-weight: 700;
+}
+.ready-to-elevate a{
+    text-align: center;
+    display: flex;
+    padding: 17px 17px;
+    font-size: 1.2em;
+    width: 145px;
+    text-wrap: wrap;
+    border-radius: 35px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #00a5ff;
+    margin: auto;
+    margin-top: 30px;
+}
+/*****************END READY TO ELEVATE*********************/
+
+/************************FOOTER****************************/
+.footer {
+    background-color: #3a2f52;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer .content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+.footer .left h2 {
+    font-size: 2em;
+}
+.footer .right h3 {
+    margin: 20px 10px;
+}
+.footer .left p {
+    font-size: 1em;
+    max-width: 250px;
+    font-weight: 500;
+}
+.footer .left, .footer .right {
+    flex: 1;
+    margin: 10px 20px;
+}
+.footer .left {
+    text-align: left;
+}
+.footer .right {
+    text-align: right;
+    margin: 10px 100px 10px auto;
+}
+.footer .social-icons {
+    margin: 30px 0;
+}
+.footer .social-icons a {
+    margin: 0 15px;
+    color: #ffffff;
+    text-decoration: none;
+}
+.footer .social-icons a:hover {
+    color: #ccc;
+}
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+.footer .copyright {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #cccccc;
+}
+/*********************END FOOTER**********************/
