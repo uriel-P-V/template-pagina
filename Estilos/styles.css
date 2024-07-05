@@ -315,51 +315,129 @@ nav ul li a {
 /******************END HERO2 SECTION***********************/
 
 /******************SLIDER***********************/
-.sliderr{
-    text-align: center;
-    font-size: 3em;
-}
-.slider {
-    display: flex;
-    overflow: hidden;
-    width: 100%;
-    position: relative; 
+.sectionSlider {
+
+    background: white;
+      width: 100%;
+      font-family: 'Asap', sans-serif;
+      font-family: 'Roboto', sans-serif;
+      align-items: center;
+      justify-content: center;
     
-}
-.slides {
-    display: flex;
-    transition: transform 0.5s ease;
-}
-.slide {
-    
-    box-sizing: border-box;
-    width: 600px;
-    height: 400px;
-}
-.arrows {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+  }
+  .swiper-container {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
-
-.arrow {
-    background: transparent;
-    border: none;
-    font-size: 2rem;
-    cursor: pointer;
-    outline: none;
-}
-
-.arrow:hover {
-    color: #333;
-}
-.twitter-tweet {
-    display: none;
-}
-
+  .avatar {
+      border-radius: 50%;
+      width: 48px;
+      margin-right: 15px;
+  }
+  .tweet-wrap {
+      max-width: 350px;
+      background: #fff;
+      margin: 20px auto;
+      border-radius: 15px;
+      padding: 20px;
+      border: 1px solid #cdcfcf;
+      border-top: 1px solid #9fa0a0;
+      min-height: 250px;
+      position: relative;
+  }
+  .tweet-header {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+  }
+  .tweet-header-info {
+      font-weight: bold;
+      flex: 1;
+      color: #14171a;
+  }
+  .tweet-header-info span {
+      color: #657786;
+      font-weight: normal;
+      margin-left: 5px;
+  }
+  .tweet-header-info p {
+      font-weight: normal;
+      margin-top: 5px;
+      color: #14171a;
+  }
+  .tweet-header-info a {
+      color: #6b2fbb;
+      text-decoration: none;
+  }
+  .tweet-header-info .read-more {
+      color: #657786;
+      text-decoration: none;
+      display: block;
+      margin-top: 5px;
+  }
+  .tweet-content a {
+      text-decoration: none;
+  }
+  .read-more {
+      color: #657786;
+  }
+  .tweet-info-counts {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+      color: #657786;
+      font-size: 14px;
+  }
+  .tweet-info-counts div {
+      display: flex;
+      align-items: center;
+      margin-right: 20px;
+  }
+  .tweet-info-counts div svg {
+      color: #657786;
+      margin-right: 5px;
+  }
+  .twitter-icon {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      color: #1da1f2;
+      width: 16px;
+      height: 16px;
+  }
+  @media screen and (max-width: 430px) {
+      body {
+          padding-left: 20px;
+          padding-right: 20px;
+      }
+      .tweet-header {
+          flex-direction: column;
+      }
+      .tweet-header img {
+          margin-bottom: 20px;
+      }
+      .tweet-header-info p {
+          margin-bottom: 30px;
+      }
+          
+    .swiper-button-next,
+    .swiper-button-prev {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        
+        background-color:black;
+        color:black;
+        cursor: pointer;
+    }
+    .swiper-button-next {
+        right: 10px;
+    }
+    .swiper-button-prev {
+        left: 10px;
+    }
+  }
 /******************END SLIDER***********************/
 
 /*****************FAQ QUESTIONS****************************/

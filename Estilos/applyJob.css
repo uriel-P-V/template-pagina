@@ -1,0 +1,383 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/******************HEADER********************/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    margin: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+    font-size: 2em;
+}
+
+.header .logo img {
+    max-width: 50px;
+    margin-right: 10px;
+}
+
+.header .logo h1 {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: 900;
+    color: #3a3535;
+}
+
+.header .view-opportunities {
+    background-color: transparent;
+    border: 2px solid #007bff;
+    color: #007bff;
+    margin-right: 10%;
+    padding: 20px 50px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.header .view-opportunities:hover {
+    background-color: #007bff;
+    color: white;
+}
+/*******************END HEADER********************/
+
+/*******************JOB POSTING*******************/
+.job-posting {
+    padding: 0px;
+}
+
+.apply-button {
+    background-color: #af7cf5;
+    color: white;
+    padding: 20px 65px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 15px;
+    display: inline-block;
+    margin-right: 100px;
+}
+
+.apply-button:hover {
+    background-color: #d1a3ff;
+}
+
+.job-meta {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f4edff;
+    padding: 0px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+.job-meta .left
+{
+    margin-left: 3.3%;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+.job-meta .right
+{
+    max-width: 400px;
+}
+.job-meta h2 {
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+.job-meta .apply-share-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+
+.job-meta .apply-share-container .share {
+    margin-top: 10px;
+}
+
+.job-meta .job-type {
+    background-color: #28a745;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 10px;
+
+}
+
+.job-meta .locations {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    max-width: 800px;
+}
+
+.job-meta .locations p {
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.job-meta .show-more {
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    padding: 0;
+}
+
+.job-meta .share {
+    display: flex;
+    align-items: center;
+}
+
+.job-meta .share span {
+    margin-right: 10px;
+}
+
+.job-meta .share a {
+    color: #555;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.job-meta .share a:hover {
+    color: #007bff;
+}
+/****************END JOB POSTING**************/
+
+/***************JOD DESCRIPTION***************/
+.job-description {
+    margin-bottom: 20px;
+    margin-left: 6.3%;
+    max-width: 1120px;
+    font-style:oblique;
+    font-weight: 600;
+}
+
+.job-details p {
+    margin-left: 6.3%;
+    margin-top: 40px;
+}
+.job-details .job-title
+{
+    font-size: 1.3em;
+    font-weight: 600;
+}
+.job-details a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.job-details a:hover {
+    text-decoration: underline;
+}
+
+.about-job
+{
+    padding: 0;
+}
+.client, .overview{
+    margin-left: 6.3%;
+    margin-top: 60px;
+    max-width: 1200px;
+}
+.client h2
+{
+    color: #007bff;
+    font-size: 1.2em;
+}
+.overview h2
+{
+    color: #af7cf5;
+    font-size: 1.2em;
+}
+/****************END JOB DESCRIPTION****************/
+
+/******************RESPONSABILITIES*****************/
+.responsibilities {
+    margin: 6.3%;
+}
+
+.responsibilities h2 {
+    color: #007bff;
+    font-size: 1.2em;
+}
+.section h3
+{
+    font-size: 1.1em;
+    font-weight: 600;
+}
+.section li{
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+.Qualifications{
+    color: #af7cf5;
+}
+.Schedule{
+    color: #007bff;
+}
+/******************END RESPONSABILITIES******************/
+
+/***********************DISCLAIMER***********************/
+.Application-disclaimer
+{
+    margin-left: 6.3%;
+    margin-top: 200px;
+    max-width: 1100px;
+}
+.Application-disclaimer h2
+{
+    color: #28a745;
+    font-size:1.6em;
+    font-weight: 700;
+}
+.Application-disclaimer p
+{
+    font-style: oblique;
+    font-size: 0.8em;
+}
+.Application-disclaimer span
+{
+    font-weight: 800;
+}
+/******************END APPLICATION DISCLAIMER****************/
+
+/******************************FORM**************************/
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 1100px;
+    margin-left: 6.3%;
+}
+
+.form-container h1 {
+    background-color: #e6e6ff;
+    padding: 10px;
+    border-radius: 8px;
+    color: #333;
+}
+
+.form-container p {
+    margin: 10px 20px;
+    color: #000;
+}
+
+.section {
+    margin: 20px 0;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 5px;
+    margin: 10px 20px;
+}
+
+.form-container span {
+    color: red;
+}
+
+.upload-box {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.upload-box .small-text {
+    color: #999;
+}
+input[type="text"],
+input[type="email"],
+input[type="file"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="file"]:focus {
+    border-color: #666;
+    outline: none;
+}
+
+.name-inputs {
+    display: flex;
+    gap: 10px;
+}
+
+.name-inputs input[type="text"] {
+    width: calc(50% - 5px);
+}
+
+.phone-input {
+    display: flex;
+    gap: 10px;
+}
+
+.phone-input input[type="text"] {
+    width: calc(20% - 5px);
+}
+
+.phone-input input#phone {
+    width: calc(80% - 5px);
+}
+
+.form-container section h2 {
+    background-color: #e6e6ff;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 18px;
+    color: #333;
+    margin-top: 20px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+button.submit-button {
+    background-color: #6c63ff;
+    color: #fff;
+    border: none;
+    padding: 25px 60px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    width: 25%;
+    margin-top: 30px;
+}
+
+button.submit-button:hover {
+    background-color: #5753d8;
+}
+
+a {
+    color: #6c63ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
