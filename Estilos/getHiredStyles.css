@@ -36,6 +36,7 @@ nav ul li a {
     align-items: center;
     justify-content: center;
     color: white;
+    text-decoration: none;
 }
 .hired
 {
@@ -107,7 +108,7 @@ nav ul li a {
 }
 
 .blue-circle {
-    background-color: #3b82f6;
+    background-color: #ae6ffa;
 }
 
 .white-circle {
@@ -133,7 +134,7 @@ nav ul li a {
 .content-left p {
     font-size: 1.5em;
     font-weight: 500;
-    color: #000;
+    color: #000000;
 }
 
 .content-right {
@@ -147,6 +148,8 @@ nav ul li a {
     height: auto;
     margin-top: 20px;
     margin: auto;
+    
+
 }
 /*****************END CAREER OPORTUNITIES*****************/
 
@@ -160,10 +163,10 @@ nav ul li a {
 .browser-recommendation {
     background-color: #fff;
     padding: 10px;
-    margin-bottom: 50px;
-    font-size: 1em;
+    margin-bottom: 20px;
+    font-size: 1.1em;
     text-align: center;
-    font-weight: 600;
+    font-weight: 700;
     color: #00a5ff;
     max-width: 100%;
 }
@@ -229,12 +232,14 @@ nav ul li a {
 }
 
 .apply-button {
-    background-color: #007bff; /* Azul */
+    font-size: 0.9em;
+    background-color: #ae6ffa;
     color: white;
     padding: 14px 40px;
     border: none;
     border-radius: 35px;
     cursor: pointer;
+    font-weight: bold;
 }
 
 .apply-button:hover {
