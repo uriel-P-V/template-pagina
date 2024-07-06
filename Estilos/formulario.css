@@ -74,7 +74,7 @@ nav ul li a {
 .lookingJob .right
 {
     max-width: 400px;
-    padding-right: 230px;
+    padding-right: 540px;
 }
 .lookingJob .looking{
     margin-top: -30px;
@@ -82,8 +82,8 @@ nav ul li a {
     padding-bottom: 10px;
 }
 .lookingJob .left p{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 27px;
+    
+    font-size: 1.2em;
     font-weight: 900;
 }
 
