@@ -10,10 +10,10 @@
 <body>
     <header>
         <nav>
-            <a href="#"><img src="logo.png" alt="HireLATAM Logo"></a>
+            <a href="/Paginas/index.html"><img class="logo" src="/Paginas/img/logo.png" alt="HireLATAM Logo"></a>
             <ul>
-                <li><a href="#" class="header-buttons hired">Get hired</a></li>
-                <li><a href="#" class="header-buttons hire">Hire us</a></li>
+                <li><a href="/Paginas/getHired.html" class="header-buttons hired">Get hired</a></li>
+                <li><a href="/Paginas/formulario.html" class="header-buttons hire">Hire us</a></li>
             </ul>
         </nav>
     </header>
@@ -23,7 +23,7 @@
             <p>If you're looking for a job, don't use the form below, instead click on this button</p>
         </div>
         <div class="right">
-            <li><a href="#" class="header-buttons hired looking">Get hired</a></li>
+            <li><a href="/Paginas/getHired.html" class="header-buttons hired">Get hired</a></li>
         </div>
     </section>
     <main>
@@ -31,19 +31,38 @@
             <div class="form-step active">
                 <h2>Let us help your business hire exceptional remote talent in Latin America!</h2>
                 <p class="bottom-text">We'll quickly collect some info to get started.</p>
-                <button class="continue">Continue</button>
+                <button id="continueBtn" class="continue">Continue</button>
                 <p class="press-enter">press Enter ↵</p>
             </div>
+            
             <div class="form-step">
-                <label for="name">Hello. What's your FIRST name?*</label>
+                <label for="name"><span>1</span> 
+                    <svg class="svg" viewBox="0 0 10 10" height="30" width="20" class="shouldFlipIfRtl">
+                        <path d="M5 3.5v1.001H-.002v-1z"></path>
+                        <path d="M4.998 4L2.495 1.477 3.2.782 6.416 4 3.199 7.252l-.704-.709z"></path>
+                    </svg>                  
+                    Hello. What's your FIRST name?*
+                </label>
                 <input type="text" id="name" placeholder="Type your answer here...">
             </div>
+            
             <div class="form-step">
-                <label for="email">Email</label>
+                <label for="name"><span>2</span> 
+                    <svg class="svg" viewBox="0 0 10 10" height="30" width="20" class="shouldFlipIfRtl">
+                        <path d="M5 3.5v1.001H-.002v-1z"></path>
+                        <path d="M4.998 4L2.495 1.477 3.2.782 6.416 4 3.199 7.252l-.704-.709z"></path>
+                    </svg>   
+                  Email</label>
                 <input type="email" id="email" placeholder="Enter your email">
             </div>
             <div class="form-step">
-                <label for="phone">Phone</label>
+                
+                <label for="name"><span>3</span> 
+                    <svg class="svg" viewBox="0 0 10 10" height="30" width="20" class="shouldFlipIfRtl">
+                        <path d="M5 3.5v1.001H-.002v-1z"></path>
+                        <path d="M4.998 4L2.495 1.477 3.2.782 6.416 4 3.199 7.252l-.704-.709z"></path>
+                    </svg>    
+                    Phone</label>
                 <input type="text" id="phone" placeholder="Enter your phone number">
             </div>
             <div class="form-step">

@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const formSteps = document.querySelectorAll(".form-step");
+    const continueBtn = document.getElementById("continueBtn");
     const nextBtn = document.getElementById("next");
     const prevBtn = document.getElementById("prev");
     let currentStep = 0;
@@ -25,12 +26,13 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     document.addEventListener("keydown", (event) => {
-        if (event.key === "Enter") {
+        if (event.key === "Enter" && event.target !== continueBtn) {
             event.preventDefault();
             nextStep();
         }
     });
 
+    continueBtn.addEventListener("click", nextStep);
     nextBtn.addEventListener("click", nextStep);
     prevBtn.addEventListener("click", prevStep);
 
